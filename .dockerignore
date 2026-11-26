@@ -1,0 +1,14 @@
+.env
+.env.*
+.git
+.github
+.venv
+__pycache__
+mlruns
+eval_data
+eval.py
+requirements-test.txt
+README.md
+scripts
+tests
+mlflow.dbmlflow.db

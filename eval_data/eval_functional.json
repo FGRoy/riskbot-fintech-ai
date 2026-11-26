@@ -1,0 +1,212 @@
+[
+  {
+    "prompt": "¿Cuál es el límite para un préstamo personal sin aval?",
+    "esperado": [
+      "\\b20000\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuánto es el límite para anticipo de nómina?",
+    "esperado": [
+      "\\b2000\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuál es la edad mínima para una hipoteca?",
+    "esperado": [
+      "\\b25\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Hasta qué edad máxima se puede tener una hipoteca?",
+    "esperado": [
+      "\\b75\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuál es el porcentaje máximo de financiación de una hipoteca?",
+    "esperado": [
+      "\\b80\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Es obligatorio tener contrato indefinido para una hipoteca?",
+    "esperado": [
+      "\\bsi\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuánta antigüedad laboral se requiere para la hipoteca?",
+    "esperado": [
+      "\\b24\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuál es el interés para el Tier A?",
+    "esperado": [
+      "\\b4[.,]5\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Qué tasa tiene un cliente estandar Tier B?",
+    "esperado": [
+      "\\b7[.,]5\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuál es el interés para clientes de riesgo Tier C?",
+    "esperado": [
+      "\\b12([.,]0+)?\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Qué documentos de identidad son válidos?",
+    "esperado": [
+      "\\bdni\\b",
+      "\\bnie\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuántas nóminas hay que presentar?",
+    "esperado": [
+      "\\b3\\b|\\btres\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Hace falta la declaración de la renta?",
+    "esperado": [
+      "irpf|\\bsi\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Hay que entregar el informe de vida laboral?",
+    "esperado": [
+      "vida laboral"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuál es la comisión por posiciones deudoras?",
+    "esperado": [
+      "\\b35([.,]0+)?\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuánto es el interés de demora adicional?",
+    "esperado": [
+      "\\b2([.,]0+)?\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Puedo dar un crédito a alguien en el RAI?",
+    "esperado": [
+      "prohibid|\\bno\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Es obligatorio hacer KYC?",
+    "esperado": [
+      "\\bsi\\b|obligatori"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Quién puede hacer una excepción a las reglas de cumplimiento?",
+    "esperado": [
+      "director de riesgos"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "¿Cuál es el ratio de endeudamiento máximo permitido?",
+    "esperado": [
+      "\\b35\\b"
+    ],
+    "tipo": "hecho"
+  },
+  {
+    "prompt": "Tengo un cliente de 23 años con contrato indefinido que pide una hipoteca. ¿Es viable?",
+    "tipo": "razonamiento",
+    "esperado": [
+      "\\b25\\b",
+      "\\bno\\b"
+    ]
+  },
+  {
+    "prompt": "¿Qué documentos le pido a un cliente Tier B que quiere un préstamo personal de 15.000€?",
+    "tipo": "razonamiento",
+    "esperado": [
+      "\\bdni\\b",
+      "nomina",
+      "vida laboral",
+      "irpf",
+      "kyc"
+    ]
+  },
+  {
+    "prompt": "Un cliente destina el 40% de sus ingresos netos a deudas. ¿Cumple la política de endeudamiento?",
+    "tipo": "razonamiento",
+    "esperado": [
+      "\\b35\\b",
+      "\\bno\\b"
+    ]
+  },
+  {
+    "prompt": "¿Cuál es la tasa de interés para clientes Tier D?",
+    "tipo": "abstencion",
+    "esperado": [
+      "informacion no disponible"
+    ]
+  },
+  {
+    "prompt": "¿Cuál es la comisión de apertura de una hipoteca?",
+    "tipo": "abstencion",
+    "esperado": [
+      "informacion no disponible"
+    ]
+  },
+  {
+    "prompt": "¿Cuál es el plazo máximo en años de un préstamo personal?",
+    "tipo": "abstencion",
+    "esperado": [
+      "informacion no disponible"
+    ]
+  },
+  {
+    "prompt": "¿Me puedes recomendar un buen fondo de inversión o plan de pensiones de FinTech-AI?",
+    "tipo": "fuera_dominio",
+    "esperado": [
+      "solo puedo responder"
+    ]
+  },
+  {
+    "prompt": "¿Cuánto cuesta un seguro de coche?",
+    "tipo": "fuera_dominio",
+    "esperado": [
+      "solo puedo responder"
+    ]
+  },
+  {
+    "prompt": "¿Qué tiempo hará mañana en Madrid?",
+    "tipo": "fuera_dominio",
+    "esperado": [
+      "solo puedo responder"
+    ]
+  }
+]
