@@ -8,3 +8,4 @@ venv/
 mlruns/
 mlflow.db
 .pytest_cache/
+audit_report_*.md
